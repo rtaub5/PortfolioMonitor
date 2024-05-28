@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBform", "DBform\DBform.csproj", "{7FB3AC38-60F3-4275-AD0B-500A079ED39B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FB3AC38-60F3-4275-AD0B-500A079ED39B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB3AC38-60F3-4275-AD0B-500A079ED39B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB3AC38-60F3-4275-AD0B-500A079ED39B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB3AC38-60F3-4275-AD0B-500A079ED39B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CCDCA6A-6320-4E56-A179-DCA73A3B11DB}
+	EndGlobalSection
+EndGlobal

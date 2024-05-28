@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FinanceS24DataSet2" targetNamespace="http://tempuri.org/FinanceS24DataSet2.xsd" xmlns:mstns="http://tempuri.org/FinanceS24DataSet2.xsd" xmlns="http://tempuri.org/FinanceS24DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FinanceS24ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FinanceS24ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DBform.Properties.Settings.GlobalReference.Default.FinanceS24ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TS_DailyDataTableAdapter" GeneratorDataComponentClassName="TS_DailyDataTableAdapter" Name="TS_DailyData" UserDataComponentName="TS_DailyDataTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FinanceS24ConnectionString (Settings)" DbObjectName="FinanceS24.dbo.TS_DailyData" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Ticker FROM dbo.TS_DailyData</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Ticker" DataSetColumn="Ticker" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FinanceS24DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FinanceS24DataSet2" msprop:Generator_UserDSName="FinanceS24DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TS_DailyData" msprop:Generator_TableClassName="TS_DailyDataDataTable" msprop:Generator_TableVarName="tableTS_DailyData" msprop:Generator_TablePropName="TS_DailyData" msprop:Generator_RowDeletingName="TS_DailyDataRowDeleting" msprop:Generator_RowChangingName="TS_DailyDataRowChanging" msprop:Generator_RowEvHandlerName="TS_DailyDataRowChangeEventHandler" msprop:Generator_RowDeletedName="TS_DailyDataRowDeleted" msprop:Generator_UserTableName="TS_DailyData" msprop:Generator_RowChangedName="TS_DailyDataRowChanged" msprop:Generator_RowEvArgName="TS_DailyDataRowChangeEvent" msprop:Generator_RowClassName="TS_DailyDataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ticker" msprop:Generator_ColumnVarNameInTable="columnTicker" msprop:Generator_ColumnPropNameInRow="Ticker" msprop:Generator_ColumnPropNameInTable="TickerColumn" msprop:Generator_UserColumnName="Ticker">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
